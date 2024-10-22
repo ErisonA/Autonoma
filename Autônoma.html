@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 80vh;
+            border: none;
+        }
+    </style>
+</head>
+<body onload="document.getElementById('content_frame').src='TINTA.html'">
+<div class="navbar">
+    <a href="TINTA.html" target="content_frame">TINTA</a>
+    <a href="PINCÉIS.html" target="content_frame">PINCÉIS</a>
+    <a href="FITAS.html" target="content_frame">FITAS</a>
+    <a href="LIMPEZA.html" target="content_frame">LIMPEZA</a>
+    <a href="FILTROS.html" target="content_frame">FILTROS</a>
+    <a href="ELÉTRICOS.html" target="content_frame">ELÉTRICOS</a>
+</div>
+<div class="content">
+    <iframe id="content_frame" name="content_frame"></iframe>
+</div>
+</body>
+</html>
